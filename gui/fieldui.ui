@@ -1,0 +1,284 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Dialog</class>
+ <widget class="QDialog" name="Dialog">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>342</width>
+    <height>357</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Dialog</string>
+  </property>
+  <property name="modal">
+   <bool>true</bool>
+  </property>
+  <widget class="QWidget" name="formLayoutWidget">
+   <property name="geometry">
+    <rect>
+     <x>20</x>
+     <y>21</y>
+     <width>301</width>
+     <height>271</height>
+    </rect>
+   </property>
+   <layout class="QFormLayout" name="formLayout">
+    <property name="labelAlignment">
+     <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+    </property>
+    <item row="0" column="0">
+     <widget class="QLabel" name="label">
+      <property name="text">
+       <string>Field:</string>
+      </property>
+     </widget>
+    </item>
+    <item row="0" column="1">
+     <widget class="QLineEdit" name="name"/>
+    </item>
+    <item row="1" column="0">
+     <widget class="QLabel" name="label_2">
+      <property name="text">
+       <string>Type:</string>
+      </property>
+     </widget>
+    </item>
+    <item row="2" column="0">
+     <widget class="QLabel" name="label_3">
+      <property name="text">
+       <string>Length:</string>
+      </property>
+     </widget>
+    </item>
+    <item row="3" column="0">
+     <widget class="QLabel" name="label_4">
+      <property name="text">
+       <string>Unsigned:</string>
+      </property>
+     </widget>
+    </item>
+    <item row="4" column="0">
+     <widget class="QLabel" name="label_5">
+      <property name="text">
+       <string>Nullable:</string>
+      </property>
+     </widget>
+    </item>
+    <item row="5" column="0">
+     <widget class="QLabel" name="label_6">
+      <property name="text">
+       <string>Key:</string>
+      </property>
+     </widget>
+    </item>
+    <item row="6" column="0">
+     <widget class="QLabel" name="label_7">
+      <property name="text">
+       <string>Default:</string>
+      </property>
+     </widget>
+    </item>
+    <item row="7" column="0">
+     <widget class="QLabel" name="label_8">
+      <property name="text">
+       <string>AutoIncrement:</string>
+      </property>
+     </widget>
+    </item>
+    <item row="2" column="1">
+     <widget class="QLineEdit" name="length"/>
+    </item>
+    <item row="6" column="1">
+     <widget class="QLineEdit" name="default_2"/>
+    </item>
+    <item row="1" column="1">
+     <widget class="QComboBox" name="type">
+      <item>
+       <property name="text">
+        <string>int</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>tinyint</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>smallint</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>mediumint</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>char</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>varchar</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>bigint</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>float</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>double</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>decimal</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>date</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>datetime</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>timestamp</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>time</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>year</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>text</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>tinytext</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>mediumtext</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>longtext</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>enum</string>
+       </property>
+      </item>
+     </widget>
+    </item>
+    <item row="3" column="1">
+     <widget class="QCheckBox" name="uns">
+      <property name="layoutDirection">
+       <enum>Qt::LeftToRight</enum>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+      <property name="checked">
+       <bool>false</bool>
+      </property>
+      <property name="tristate">
+       <bool>false</bool>
+      </property>
+     </widget>
+    </item>
+    <item row="4" column="1">
+     <widget class="QCheckBox" name="nullable">
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
+    </item>
+    <item row="7" column="1">
+     <widget class="QCheckBox" name="autoincrement">
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
+    </item>
+    <item row="5" column="1">
+     <widget class="QComboBox" name="key">
+      <item>
+       <property name="text">
+        <string/>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>primary</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>unique</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>multiple</string>
+       </property>
+      </item>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QPushButton" name="saveBtn">
+   <property name="geometry">
+    <rect>
+     <x>220</x>
+     <y>310</y>
+     <width>101</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Save</string>
+   </property>
+  </widget>
+ </widget>
+ <tabstops>
+  <tabstop>name</tabstop>
+  <tabstop>type</tabstop>
+  <tabstop>length</tabstop>
+  <tabstop>uns</tabstop>
+  <tabstop>nullable</tabstop>
+  <tabstop>key</tabstop>
+  <tabstop>default_2</tabstop>
+  <tabstop>autoincrement</tabstop>
+  <tabstop>saveBtn</tabstop>
+ </tabstops>
+ <resources/>
+ <connections/>
+</ui>

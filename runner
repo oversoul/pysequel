@@ -1,0 +1,5 @@
+pyuic4 gui/mainui.ui > gui/mainui.py
+pyuic4 gui/fieldui.ui > gui/fieldui.py
+pyuic4 gui/tableui.ui > gui/tableui.py
+pyuic4 gui/edit.ui > gui/editui.py
+pyrcc4 -o gui/img_rc.py img.qrc

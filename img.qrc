@@ -1,0 +1,7 @@
+<RCC>
+    <qresource prefix="icons">
+        <file>img/data.png</file>
+        <file>img/info.png</file>
+        <file>img/structure.png</file>
+    </qresource>
+</RCC>
