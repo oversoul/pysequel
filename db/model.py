@@ -248,7 +248,7 @@ class dbs:
 		return data
 
 	def removeField(self, table, field):
-		q = "ALTER TABLE '%s' DROP COLUMN `%s`;" % (table, field)
+		q = "ALTER TABLE `%s` DROP COLUMN `%s`;" % (table, field)
 		cur = self.db.cursor()
 		try:
 			cur.execute(q)
