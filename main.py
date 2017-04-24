@@ -79,7 +79,7 @@ class FieldWindow(QtGui.QDialog, fieldui.Ui_Dialog):
 			default = 'DEFAULT %s' % default
 		auto = 'auto_increment' if self.autoincrement.checkState() == 2 else ''
 
-		return "%s %s%s %s %s %s %s %s" % (name, typ, size, unsigned, nullable, default, key, auto)
+		return "`%s` %s%s %s %s %s %s %s" % (name, typ, size, unsigned, nullable, default, key, auto)
 
 	def updateField(self):
 		query = self.getQuery()

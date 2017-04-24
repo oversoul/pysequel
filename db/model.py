@@ -141,7 +141,7 @@ class dbs:
 		return fields
 
 	def alterColumn(self, table, field, new):
-		q = "alter table %s change %s %s;" % (table, field, new)
+		q = "alter table %s change `%s` %s;" % (table, field, new)
 		logging.info(q)
 		cur = self.db.cursor()
 		try:
@@ -198,6 +198,7 @@ class dbs:
 		q = q + ', '.join(fields) + ") VALUES ("
 		holder = ""
 		values = {}
+		# hero!
 		for i in range(len(fields)):
 			holder = holder + "%(" + fields[i] + ")s, "
 			values[fields[i]] = data[i]
